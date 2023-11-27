@@ -3,13 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AirsoftCoreApp.MainPage">
 
-    <VerticalStackLayout
-        Padding="30,0"
-        Spacing="25">
-        <Label
-            Text="Bienvenido a AirsoftCore"
-            Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Bienvenido a AirsoftCore"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Tu tienda de confianza para todas tus necesidades de Airsoft"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Button
+                Text="Ver productos"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="Contacto"
+                HorizontalOptions="Fill" />
+
+            <Label
+                Text="Ofrecemos una amplia gama de productos de Airsoft, desde armas hasta accesorios y equipo de protección. ¡Explora nuestra tienda hoy!"
+                Style="{StaticResource Body}" />
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>
